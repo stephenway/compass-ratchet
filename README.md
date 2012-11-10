@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Compass Ratchet
 ===============
 
@@ -65,3 +66,9 @@ In your project import either the whole library or parts
 ## Credits
 
 This Compass-ratchet was created by **[Stephen Way](https://github.com/stephenway)**
+=======
+compass-ratchet
+===============
+
+Prototype iPhone apps with simple HTML, Sass, and JS components.
+>>>>>>> ea0b4a07f44ec83a741f90a7b9544a439aa4e8e1
