@@ -1,0 +1,67 @@
+@import "compass-ratchet/shared";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/box";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "compass/css3/text-shadow";
+
+/* Segmented controllers
+-------------------------------------------------- */
+
+.segmented-controller {
+  display: -webkit-box;
+  display: box;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  @include text-shadow(0 1px rgba(255, 255, 255, .5));
+  list-style: none;
+  background-color: #f8f8f8;
+  @include background(linear-gradient(top, #f8f8f8, #d4d4d4));
+  border: 1px solid #aaa;
+  @include border-radius(3px);
+  @include box-shadow(inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, .8));
+  @include box-orient(horizontal);
+}
+
+/* Section within controller */
+.segmented-controller li {
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  border-left: 1px solid #aaa;
+  @include box-shadow(inset 1px 0 rgba(255, 255, 255, .5));
+  @include box-flex(1);
+}
+
+/* Link that fills each section */
+.segmented-controller li > a {
+  display: block;
+  padding: 8px 16px;
+  overflow: hidden;
+  line-height: 15px;
+  color: #333;
+  text-overflow: ellipsis;
+}
+
+/* Remove border-left and shadow from first section */
+.segmented-controller li:first-child {
+  border-left-width: 0;
+  @include box-shadow(none);
+}
+
+/* Active segment of controller */
+.segmented-controller li.active {
+  background-color: #ccc;
+  @include box-shadow(inset 0 1px 5px rgba(0, 0, 0, .3));
+}
+
+.segmented-controller-item {
+  display: none;
+}
+
+.segmented-controller-item.active {
+  display: block;
+}

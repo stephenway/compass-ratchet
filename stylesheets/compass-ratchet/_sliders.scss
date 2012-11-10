@@ -1,0 +1,40 @@
+@import "compass-ratchet/shared";
+
+@import "compass/css3/transition";
+
+/* Slider styles (to be used with sliders.js)
+-------------------------------------------------- */
+
+/* Width/height of slider */
+.slider,
+.slider > li {
+  width: 100%;
+  height: 200px;
+}
+
+/* Outer wrapper for slider */
+.slider {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Inner wrapper for slider (width of all slides together) */
+.slider > ul {
+  position: relative;
+  font-size: 0; /* Remove spaces from inline-block children */
+  white-space: nowrap;
+  @include transition(all 0 linear);
+}
+
+/* Individual slide */
+.slider > ul > li {
+  display: inline-block;
+  vertical-align: top; /* Ensure that li always aligns to top */
+  width: 100%; 
+  height: 100%;
+}
+
+/* Required reset of font-size to same as standard body */
+.slider > ul > li > * {
+  font-size: 14px;
+}
