@@ -1,5 +1,3 @@
 require 'compass'
-
-Compass::Frameworks.register('compass-ratchet',
-  :stylesheets_directory => File.join(File.dirname(__FILE__), '..', 'stylesheets'),
-  :templates_directory => File.join(File.dirname(__FILE__), '..', 'templates'))
+extension_path = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+Compass::Frameworks.register('compass-ratchet', :path => extension_path)

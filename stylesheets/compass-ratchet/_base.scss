@@ -1,6 +1,6 @@
 @import "compass-ratchet/shared";
 
-@import "compass/css3/translate";
+@import "compass/css3/transition";
 @import "compass/css3/transform";
 
 /* Hard reset
@@ -124,9 +124,10 @@ a {
   left: 0;
   overflow: auto;
   background: #fff;
-  @include transition-property(top, bottom);
-  @include transition-duration(.2s, .2s);
-  @include transition-timing-function(linear, linear);
+  @include transition-property(top);
+  @include transition-property(bottom);
+  @include transition-duration(.2s);
+  @include transition-timing-function(linear);
   -webkit-overflow-scrolling: touch;
 }
 
