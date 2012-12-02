@@ -1,5 +1,4 @@
-Compass Ratchet
-===============
+# ![compass-ratchet](http://i.imgur.com/VKwBs.png)
 
 Prototype iPhone apps with simple Sass components. This extension is meant for Compass users who use project templates and prefer to use Sass instead of CSS for their Ratchet projects.
 
@@ -10,7 +9,7 @@ Please fork this repository, then submit a pull request with your changes in a n
 
 ### Bundler
 If you want to bundle into your app, install bundler.
-	
+
 	$ gem install bundler
 
 With Bundler installed, add this to your Gemfile.
@@ -26,7 +25,7 @@ Run this in the command line:
 
 ### Manual
 If bundler isn't your thing, install this gem.
-	
+
 	$ gem install compass-ratchet
 
 Then verify it's installed.
@@ -41,7 +40,7 @@ Next in your Compass project add this to your config.rb
 
 In your project import either the whole library or parts
 
-``` scss	
+``` scss
 @import "ratchet";
 ```
 
