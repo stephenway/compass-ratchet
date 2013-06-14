@@ -217,15 +217,13 @@
   left: -5px;
   @include background(linear-gradient(left bottom, #0984c6, #1eb0e9));
   border-left: 1.5px solid rgba(255, 255, 255, .25);
-  @include rotate(-45deg);
-  @include skew(-10deg, -10deg);
+  @include transform(rotate(-45deg) skew(-10deg, -10deg));
 }
 .bar-title .button-next:before {
   right: -5px;
   @include background(linear-gradient(left bottom, #1eb0e9, #0984c6));
   border-top: 1.5px solid rgba(255, 255, 255, .25);
-  @include rotate(135deg);
-  @include skew(-10deg, -10deg);
+  @include transform(rotate(135deg) skew(-10deg, -10deg));
 }
 
 /* Active states for the directional buttons */
